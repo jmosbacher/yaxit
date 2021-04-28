@@ -66,7 +66,8 @@ def read_templates(fdir, fname, histname,
             else:
                 dims = hist_dims
             if len(dims) != len(bins):
-                raise ValueError("The number of dimensions provided does not match the number of bin arrays in the file.")
+                raise ValueError("The number of dimensions provided\
+                     does not match the number of bin arrays in the file.")
 
             for param_vals in itertools.product(*hist_params.values()):
                 kwargs = {k:v for k,v in zip(hist_params, param_vals)}
