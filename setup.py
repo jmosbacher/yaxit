@@ -36,6 +36,6 @@ setup(
     packages=['yaxit'],
     package_dir={"": "."},
     package_data={},
-    install_requires=['click', 'h5py==3.*,>=3.2.1', 'pandas==1.*,>=1.2.4', 'pathlib==1.*,>=1.0.1', 'xarray==0.*,>=0.17.0', 'xpublish==0.*,>=0.1.0'],
+    install_requires=['aiohttp==3.*,>=3.7.4', 'bokeh==2.*,>=2.3.1', 'click', 'h5py==3.*,>=3.2.1', 'matplotlib==3.*,>=3.4.1', 'numpy==1.*,>=1.20.2', 'pandas==1.*,>=1.2.4', 'pathlib==1.*,>=1.0.1', 'requests==2.*,>=2.25.1', 'tables==3.*,>=3.6.1', 'xarray==0.*,>=0.17.0', 'xpublish==0.*,>=0.1.0', 'xrviz==0.*,>=0.1.4'],
     extras_require={"dev": ["bumpversion", "coverage", "dephell", "flake8", "isort", "nbsphinx", "pylint", "pytest", "sphinx", "sphinx-material", "tox", "yapf"]},
 )
